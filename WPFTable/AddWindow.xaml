@@ -1,0 +1,32 @@
+﻿<Window x:Class="WPFTable.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFTable"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="350" Width="400" WindowStartupLocation="CenterScreen" WindowState="Normal" ResizeMode="CanResizeWithGrip">
+    <Grid Visibility="Visible">
+        <StackPanel Margin="0,50,0,100">
+            <TextBox x:Name="ModelAdd" Width="160" Height="40"  materialDesign:HintAssist.Hint="Модель"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Top" Cursor="Arrow" BorderBrush="Tan" FontSize="14" 
+                     FontStyle="Italic" CaretBrush="#FFCF9E5D"/>
+            <TextBox x:Name="MarkAdd" Width="160" Height="40"  materialDesign:HintAssist.Hint="Марка"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Top" Cursor="Arrow" BorderBrush="Tan" FontSize="14" 
+                     FontStyle="Italic" CaretBrush="#FFCF9E5D"/>
+            <TextBox x:Name="MaxSpeedAdd" Width="160" Height="40"  materialDesign:HintAssist.Hint="Максимальная скорость"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" HorizontalContentAlignment="Center"
+                 VerticalContentAlignment="Top" Cursor="Arrow" BorderBrush="Tan" FontSize="14" 
+                     FontStyle="Italic" CaretBrush="#FFCF9E5D"/>
+
+        </StackPanel>
+        <Button x:Name="AddCar_Button" Width="100" Margin="0,200,100,75" Content="Добавить"
+                Background="#FFD8BE9B" BorderBrush="#FF3A97B7" Click="AddCar_Click"/>
+        <Button x:Name="Cancel_Button" Width="100" Margin="150,200,0,75" Content="Отмена"
+                Background="#FFD8BE9B" BorderBrush="#FF3A97B7" Click="Cancel_Click"/>
+
+    </Grid>
+</Window>
